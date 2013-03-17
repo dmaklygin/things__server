@@ -1,0 +1,41 @@
+-------------------------------------------------
+
+TABLE THINGS
+thing_id UID
+place STRING
+thing STRING
+description TEXT
+coordinates ???
+anonymosly ????
+share on facebook
+
+-------------------------------------------------
+
+TABLE THING_POINTS
+think_id ID
+user_id  ID
+point   int
+
+-------------------------------------------------
+
+TABLE THING_COMMENTS
+think_id ID
+user_id ID
+comment String
+date DATETIME
+
+-------------------------------------------------
+
+TABLE USERS
+user_id UID
+name STRING
+photo STRING
+reg_date DATETIME
+
+-------------------------------------------------
+
+TABLE POSITIONS
+user_id UID
+position int
+
+-------------------------------------------------
