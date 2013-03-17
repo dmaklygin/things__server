@@ -33,6 +33,12 @@ app.configure('development', function(){
 
 // routines
 app.get('/things', routes.thing.list);
+app.get('/things/create', routes.thing.create);
+app.get('/things/comments', routes.thing.commentsList);
+app.get('/things/add_comment', routes.thing.addComment);
+app.get('/things/add_point', routes.thing.addPoint);
+app.get('/users', routes.user.list);
+app.get('/users/create', routes.user.create);
 app.get('/thing/:id', routes.thing.item);
 
 app.options('*', function(req, res) {

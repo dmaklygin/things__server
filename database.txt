@@ -5,9 +5,10 @@ thing_id UID
 place STRING
 thing STRING
 description TEXT
-coordinates ???
-anonymosly ????
-share on facebook
+tags String
+coordinates Array [ Number ]
+anonymously Boolean
+point Number
 
 -------------------------------------------------
 

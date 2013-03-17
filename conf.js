@@ -5,20 +5,21 @@ console.log("process.env.NODE_ENV == ", process.env.NODE_ENV);
             return {
                 hostname: 'http://xxx.herokuapp.com/',
                 mongo: process.env.MONGOLAB_URI,
-                secret: ''
+                secret: 'sfsdf'
             };
         case 'test':
             return {
                 hostname: 'localhost',
                 port: 3000,
-                mongo: 'mongodb://localhost/sample'
+                mongo: 'mongodb://localhost/things',
+	              secret: 'srgetherstheth'
             };
         default:
             return {
                 hostname: 'localhost',
                 port: 3000,
-                mongo: 'mongodb://localhost:27017/sample',
-                secret: ''
+                mongo: 'mongodb://localhost:27017/things',
+                secret: 'hwrthrthwrth'
             };
     }
 };
