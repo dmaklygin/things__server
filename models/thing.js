@@ -8,11 +8,13 @@ ThingSchema = new Schema({
         type: Schema.ObjectId,
         ref: 'User'
     },
-	place: String,
+	place_id: {
+        type: Schema.ObjectId,
+        ref: 'Place'
+    },
 	thing: String,
 	description: String,
     tags: Array,
-	coordinates: Array,
 	anonymously: Boolean,
 	created: {
         type: Date,

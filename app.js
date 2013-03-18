@@ -32,6 +32,8 @@ app.configure('development', function(){
 });
 
 // routines
+app.get('/places', routes.place.list);
+app.get('/places/create', routes.place.create);
 app.get('/things', routes.thing.list);
 app.get('/things/create', routes.thing.create);
 app.get('/things/comments', routes.thing.commentsList);

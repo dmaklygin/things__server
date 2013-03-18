@@ -7,7 +7,8 @@ Point  = require('../models').Point;
  * Think__id 514612c5fcaa9a7c4d000001
  */
 
-var userId = '5145fffbb3e6bcf24b000001';
+var userId = '5145fffbb3e6bcf24b000001',
+    placeId = '5147739d3f948b6105000001';
 
 exports.list = function(req, res) {
     Thing.find(function(err, items) {
@@ -22,14 +23,13 @@ exports.item = function(req, res) {
 exports.create = function(req, res) {
     var thingOBj = new Thing({
         user_id: userId,
-        place:       "Кремлевская столовая",
-        thing:       "Столовая в кремле",
+        place_id: placeId,
+        thing: "Столовая в кремле",
         description: "Ну, неплохо кормят. Супчик за 10000 рублей понравился.",
-        tags:        [
+        tags: [
             "Кремль", "Москва", "Столовая"
         ],
-        anonymously: true,
-        coordinates: [ 55.4, 64.453 ]
+        anonymously: true
     });
 
     thingOBj.save(function(err, doc) {

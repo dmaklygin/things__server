@@ -1,12 +1,20 @@
+TABLE PLACE
+place_id UID
+name String
+coordinates Array [ Number ]
+address
+city
+state
+country
+
 -------------------------------------------------
 
 TABLE THINGS
 thing_id UID
-place STRING
+place_id ID
 thing STRING
 description TEXT
 tags String
-coordinates Array [ Number ]
 anonymously Boolean
 point Number
 
